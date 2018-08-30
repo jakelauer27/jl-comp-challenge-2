@@ -76,10 +76,11 @@ li i {
 }
 
 .peace-hand-icon {
-  font-size: 35px;
+  font-size: 40px;
   margin: 5px 7px;
   position: relative;
   bottom: 4px;
+  color: rgb(88, 180, 247);
 }
 
 .shares {
