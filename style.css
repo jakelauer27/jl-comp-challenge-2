@@ -86,7 +86,7 @@ li i {
 .shares {
   font-size: 30px;
   color: rgb(67, 67, 67);
-  margin: 20px 2.5%;
+  margin: 20px 0;
 }
 
 .nav-item:hover,
@@ -137,12 +137,17 @@ li i {
 
 /*GRID STYLING*/
 
+.full-container {
+  width: 95vw;
+  margin: 0 auto;
+}
+
 .container {
   display: grid;
   grid-template-rows: repeat(2, 390px);
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
-  width: 95vw;
+  width: 100%;
   max-width: 1250px;
   margin: 10px auto;
   justify-content: center;
@@ -316,7 +321,11 @@ h4 {
 }
 
 @media screen and (max-width: 540px) {
-    .container {
+  .full-container {
+    margin-top: 65px;
+  }
+  
+  .container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 390px);
   }
