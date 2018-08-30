@@ -21,7 +21,10 @@
   
   ## Comp Images
   
-  ![Original Comp](JL-Comp.png)
+ 
+  ## Original Composition
+  ![Original Comp](OG-Comp.png)
   
-  ![My Compy](OG-Comp.png)
+  ## My Composition
+  ![My Compy](JL-Comp.png)
 
