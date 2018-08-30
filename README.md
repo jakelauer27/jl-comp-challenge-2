@@ -21,7 +21,7 @@
   
   ## Comp Images
   
-  ![Original Comp](http://url/to/img.png)
+  ![Original Comp](JL-Comp.png)
   
-  ![My Compy](http://url/to/img.png)
+  ![My Compy](OG-Comp.png)
 
