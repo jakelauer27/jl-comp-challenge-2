@@ -97,6 +97,10 @@ li i {
   color: white;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 /*OPTIONS MENU*/
 
 .details {
@@ -316,5 +320,65 @@ h4 {
     grid-template-rows: repeat(8, 390px);
   }
 
+  nav {
+    display: none
+  }
+
+  .mobile-nav {
+    display: block;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .mobile-title {
+    font-size: 35px;
+    font-family: 'Baloo Tammudu', cursive;
+    float: right;
+    margin-right: 10px;
+    margin-top: 6px;
+  }
+
+  .mobile-peace-hand-icon {
+    color: rgb(88, 180, 247);
+  }
+
+  .mobile-nav-container {
+    display: none;
+    background-color: rgb(43, 43, 43);
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    list-style-type: none;
+  }
+
+  .mobile-list-icon {
+    font-size: 30px;
+    color: rgb(88, 180, 247);
+    margin: 11px;
+  }
+
+  .x-icon {
+    display: none;
+  }
+
+  .mobile-nav:hover .mobile-nav-container {
+    display: block;
+  }
+
+  .mobile-nav:hover .mobile-title {
+    display: none;
+  }
+
+  .mobile-nav-item {
+    margin: 15px;
+  }
+
+  .mobile-nav-item:hover,
+  .mobile-nav-item:hover .nav-item {
+  color: white;
+}
 
 }
