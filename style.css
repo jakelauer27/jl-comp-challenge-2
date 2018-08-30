@@ -1,6 +1,3 @@
-* {
-  transition: all .3s ease;
-}
 
 body {
   background-color: rgb(239, 239, 239);
@@ -32,6 +29,7 @@ nav:after {
   display: flex;
   float: right;
   margin: 15px 30px;
+  position: relative;
 }
 
 .user-icon {
@@ -43,6 +41,8 @@ nav:after {
 
 .user-icon-arrow {
   font-size: 20px;
+  transform: rotate(-90deg);
+  transition: all .3s ease;
 }
 
 .nav-list {
@@ -56,7 +56,7 @@ nav:after {
   float: right;
 }
 
-li {
+.nav-list li {
   margin: 0 20px;
   font-size: 14px;
   color: rgb(133, 133, 133)
@@ -96,6 +96,43 @@ li i {
 .login-container:hover {
   color: white;
 }
+
+.mobile-nav {
+  display: none;
+}
+
+/*OPTIONS MENU*/
+
+.details {
+  color: #2b2b2b;
+  overflow: hidden;
+  background-color: white;
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+  z-index: 1;
+  filter: drop-shadow(2px 2px 2px #2b2b2b);
+}
+
+.login-container:hover .details {
+  display: block;
+}
+
+.login-container:hover .user-icon-arrow {
+  transform: rotate(0deg)
+}
+
+.menu-option {
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.menu-option:hover {
+  background-color: #2b2b2b;
+  color:white;
+}
+
 
 /*GRID STYLING*/
 
@@ -247,4 +284,101 @@ h4 {
 .share-count {
   color: rgb(88, 180, 247);
   font-size: 24px;
+}
+
+/*IPAD SIZING*/
+
+@media screen and (max-width: 1080px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 390px);
+  }
+
+  section {
+    max-width: 100%;
+  }
+
+  .nav-list li {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+    .nav-list {
+    display: block;
+    bottom: 10px;
+  }
+
+  .nav-list li {
+    margin: 15px 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 390px);
+  }
+
+  nav {
+    display: none
+  }
+
+  .mobile-nav {
+    display: block;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .mobile-title {
+    font-size: 35px;
+    font-family: 'Baloo Tammudu', cursive;
+    float: right;
+    margin-right: 10px;
+    margin-top: 6px;
+  }
+
+  .mobile-peace-hand-icon {
+    color: rgb(88, 180, 247);
+  }
+
+  .mobile-nav-container {
+    display: none;
+    background-color: rgb(43, 43, 43);
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    list-style-type: none;
+  }
+
+  .mobile-list-icon {
+    font-size: 30px;
+    color: rgb(88, 180, 247);
+    margin: 11px;
+  }
+
+  .x-icon {
+    display: none;
+  }
+
+  .mobile-nav:hover .mobile-nav-container {
+    display: block;
+  }
+
+  .mobile-nav:hover .mobile-title {
+    display: none;
+  }
+
+  .mobile-nav-item {
+    margin: 15px;
+  }
+
+  .mobile-nav-item:hover,
+  .mobile-nav-item:hover .nav-item {
+  color: white;
+}
+
 }
