@@ -66,7 +66,7 @@ nav:after {
 
 .nav-list li {
   margin: 0 20px;
-  font-size: 14px;
+  font-size: 18px;
   color: rgb(133, 133, 133)
 }
 
@@ -320,10 +320,10 @@ h4 {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 860px) {
     .nav-list {
     display: block;
-    bottom: 10px;
+    bottom: 5px;
   }
 
   .nav-list li {
@@ -377,6 +377,7 @@ h4 {
     top: 50px;
     width: 100%;
     list-style-type: none;
+    color: rgb(133, 133, 133)
   }
 
   .mobile-list-icon {
