@@ -26,5 +26,5 @@
   ![Original Comp](OG-Comp.png)
   
   ## My Composition
-  ![My Compy](My-Comp.png)
+  ![My Compy](My-Static-Comp.png)
 
