@@ -19,4 +19,9 @@
   - Icons
   - Color Palette
   
+  ## Comp Images
   
+  ![Original Comp](http://url/to/img.png)
+  
+  ![My Compy](http://url/to/img.png)
+
