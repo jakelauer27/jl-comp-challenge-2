@@ -300,13 +300,14 @@ a {
 
 h4 {
   font-size: 12px;
-  margin: 20px 0px 5px 0px;
+  margin: 20px 0px 3px 0px;
   font-weight: 400;
 }
 
 .share-count {
   color: rgb(88, 180, 247);
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 860px) {
