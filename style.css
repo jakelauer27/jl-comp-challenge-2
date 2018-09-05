@@ -161,7 +161,7 @@ li i {
 .container {
   display: grid;
   grid-template-rows: repeat(2, auto);
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-gap: 20px;
   width: 100%;
   margin: 10px auto;
@@ -267,7 +267,6 @@ section {
 
 /*GRID ITEM BODY*/
 
-
 article {
   width: 95%;
   margin: 14px;
@@ -310,23 +309,6 @@ h4 {
   font-size: 24px;
 }
 
-/*IPAD SIZING*/
-
-@media screen and (max-width: 1100px) {
-  .container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-  }
-
-  section {
-    max-width: 100%;
-  }
-
-  .nav-list li {
-    margin: 0 10px;
-  }
-}
-
 @media screen and (max-width: 860px) {
     .nav-list {
     display: block;
@@ -335,11 +317,6 @@ h4 {
 
   .nav-list li {
     margin: 15px 10px;
-  }
-
-  .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
   }
 }
 
@@ -350,11 +327,6 @@ h4 {
   
   .full-container {
     margin-top: 65px;
-  }
-  
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, auto);
   }
 
   nav {
@@ -417,6 +389,5 @@ h4 {
   .mobile-nav-item:hover,
   .mobile-nav-item:hover .nav-item {
   color: white;
-}
-
+  }
 }
