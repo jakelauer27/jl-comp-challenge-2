@@ -11,12 +11,12 @@ h5 {
 }
 
 /*NAV BAR STYLING*/
+
 nav {
   background-color: rgb(43, 43, 43);
   color: white;
   height: 130px;
   position: relative;
-  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -58,16 +58,21 @@ nav:after {
   position: absolute;
   bottom: 30px;
   left: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-title {
   float: right;
+  margin: 0;
 }
 
 .nav-list li {
   margin: 0 20px;
   font-size: 18px;
-  color: rgb(133, 133, 133)
+  color: rgb(133, 133, 133);
+  list-style: none;
+  margin-right: 0;
 }
 
 li i {
@@ -136,6 +141,7 @@ li i {
 .menu-option {
   padding: 10px 20px;
   margin: 0;
+  list-style: none;
 }
 
 .menu-option:hover {
@@ -150,16 +156,14 @@ li i {
   width: 95vw;
   margin: 0 auto;
   width: 95%;
-  max-width: 1250px;
 }
 
 .container {
   display: grid;
-  grid-template-rows: repeat(2, 390px);
+  grid-template-rows: repeat(2, auto);
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   width: 100%;
-  max-width: 1250px;
   margin: 10px auto;
   justify-content: center;
 }
@@ -167,7 +171,6 @@ li i {
 section {
   background-color: rgb(255, 255, 255);
   width: 100%;
-  max-width: 300px;
   height: 100%;
   filter: drop-shadow(3px 3px 4px #9e9e9e);
 }
@@ -266,7 +269,7 @@ section {
 article {
   width: 95%;
   margin: 14px;
-  height: 100px;
+  height: 100%;
 }
 
 h3 {
@@ -308,7 +311,7 @@ h4 {
 @media screen and (max-width: 1080px) {
   .container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 390px);
+    grid-template-rows: repeat(4, auto);
   }
 
   section {
@@ -342,7 +345,7 @@ h4 {
   
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 390px);
+    grid-template-rows: repeat(8, auto);
   }
 
   nav {
