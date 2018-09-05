@@ -6,17 +6,17 @@ body {
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 1em;
   margin: auto 10px;
 }
 
 /*NAV BAR STYLING*/
+
 nav {
   background-color: rgb(43, 43, 43);
   color: white;
   height: 130px;
   position: relative;
-  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -48,7 +48,7 @@ nav:after {
 }
 
 .user-icon-arrow {
-  font-size: 20px;
+  font-size: 1.4em;
   transform: rotate(-90deg);
   transition: all .3s ease;
 }
@@ -58,16 +58,21 @@ nav:after {
   position: absolute;
   bottom: 30px;
   left: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-title {
   float: right;
+  margin: 0;
 }
 
 .nav-list li {
   margin: 0 20px;
-  font-size: 18px;
-  color: rgb(133, 133, 133)
+  font-size: 1.1em;
+  color: rgb(133, 133, 133);
+  list-style: none;
+  margin-right: 0;
 }
 
 li i {
@@ -80,11 +85,11 @@ li i {
   right: 20px;
   bottom: 5px;
   font-family: 'Baloo Tammudu', cursive;
-  font-size: 45px;
+  font-size: 2.8em;
 }
 
 .peace-hand-icon {
-  font-size: 40px;
+  font-size: 1em;
   margin: 5px 7px;
   position: relative;
   bottom: 4px;
@@ -92,7 +97,7 @@ li i {
 }
 
 .shares {
-  font-size: 30px;
+  font-size: 1.9em;
   color: rgb(67, 67, 67);
   margin: 20px 0;
   width: 100%
@@ -136,6 +141,7 @@ li i {
 .menu-option {
   padding: 10px 20px;
   margin: 0;
+  list-style: none;
 }
 
 .menu-option:hover {
@@ -150,16 +156,14 @@ li i {
   width: 95vw;
   margin: 0 auto;
   width: 95%;
-  max-width: 1250px;
 }
 
 .container {
   display: grid;
-  grid-template-rows: repeat(2, 390px);
+  grid-template-rows: repeat(2, auto);
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   width: 100%;
-  max-width: 1250px;
   margin: 10px auto;
   justify-content: center;
 }
@@ -167,7 +171,6 @@ li i {
 section {
   background-color: rgb(255, 255, 255);
   width: 100%;
-  max-width: 300px;
   height: 100%;
   filter: drop-shadow(3px 3px 4px #9e9e9e);
 }
@@ -200,7 +203,7 @@ section {
   background-color: white;
   border: 2px solid white;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 1.4em;
   padding: 12px;
   margin: 15px;
   transition: all .3s ease;
@@ -214,18 +217,20 @@ section {
 
 .listens-container {
   float: right;
-  margin: 15px;
+  margin: 13px;
+  padding: 0;
   text-align: center;
 }
 
 .listens {
-  font-size: 12px;
+  font-size: 1em;
   margin-bottom: 5px;
   font-weight: 300;
 }
 
 .listen-count {
-  font-size: 19px;
+  font-size: 1.7em;
+  margin: 0;
 }
 
 .banner-cory {
@@ -266,15 +271,15 @@ section {
 article {
   width: 95%;
   margin: 14px;
-  height: 100px;
+  height: 100%;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 .date {
-  font-size: 14px;
+  font-size: .9em;
   color: rgb(188,188, 188);
   margin: 4px 0 12px 0;
   font-weight: 300;
@@ -285,6 +290,7 @@ h3 {
   padding: 8px 8px 14px 8px;
   word-wrap: break-word;
   margin: 16px 12px 16px 0px;
+  height: 35px;
 }
 
 a {
@@ -296,6 +302,7 @@ a {
 h4 {
   font-size: 12px;
   margin: 20px 0px 5px 0px;
+  font-weight: 400;
 }
 
 .share-count {
@@ -305,10 +312,10 @@ h4 {
 
 /*IPAD SIZING*/
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1100px) {
   .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 390px);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
   }
 
   section {
@@ -329,6 +336,11 @@ h4 {
   .nav-list li {
     margin: 15px 10px;
   }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -342,7 +354,7 @@ h4 {
   
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 390px);
+    grid-template-rows: repeat(8, auto);
   }
 
   nav {
